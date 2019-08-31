@@ -10,6 +10,10 @@ export class HomeComponent implements OnInit {
   sendData="Data geliyor";
   constructor() { }
 
+
+  valueChange(event){
+    console.log("Alttan gelen DATA" , event);
+  }
   
   ngOnInit() {
   }

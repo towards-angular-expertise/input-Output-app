@@ -2,4 +2,4 @@
   Home works!
 </p>
 
-<app-HomeChildren [searchText]="sendData" ></app-HomeChildren>
+<app-HomeChildren (inText)="valueChange($event);" [searchText]="sendData" ></app-HomeChildren>

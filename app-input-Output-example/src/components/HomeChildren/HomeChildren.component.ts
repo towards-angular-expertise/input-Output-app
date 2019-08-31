@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-HomeChildren',
@@ -10,7 +10,10 @@ export class HomeChildrenComponent implements OnInit {
   constructor() { }
 
   @Input() searchText;
+  @Output() inText = new EventEmitter();
+  Count=0;
   ngOnInit() {
+    this.inText.emit(this.Count);
   }
 
 }
